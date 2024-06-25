@@ -530,7 +530,7 @@
     </div>
   </footer>
 
-  <dialog id="dialog-id" class="dialog" arial-controls="dialog-id">
+  <dialog id="dialog-id" class="dialog">
     <form method="dialog" class="dialog__form">
       <div class="dialog__content">
         <svg class="dialog__icon floopy-icon button__text">
@@ -541,7 +541,8 @@
           дискету, чтобы продолжить</p>
       </div>
 
-      <button type="submit" class="dialog__button button"><span class="button__text">ок</span></button>
+      <button type="submit" class="dialog__button button" aria-controls="dialog-id"><span
+          class="button__text">ок</span></button>
     </form>
   </dialog>
 
