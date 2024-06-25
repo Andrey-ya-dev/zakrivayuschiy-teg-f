@@ -143,7 +143,7 @@
   left: -21px;
   color: currentColor;
   display: none;
-  animation: leftRight 0.5s ease-in-out infinite alternate;
+  animation: arrowMove 0.5s ease-in-out infinite alternate;
 }
 .theme-menu__button:disabled::before {
   display: block;
@@ -275,7 +275,7 @@
   fill: var(--bg-color);
 }
 .like-icon.is-liked .heart {
-  animation: more 0.3s 0.1s 1 alternate ease-in;
+  animation: scaleHeart 0.3s 0.1s 1 alternate ease-in;
 }
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s 0.3s 1 alternate ease-in;
@@ -365,35 +365,6 @@
 
 .dialog__button {
   padding: 10px 20px;
-}
-
-@keyframes leftRight {
-  from {
-    top: 0;
-    left: -21px;
-  }
-  to {
-    top: 0;
-    left: -17px;
-  }
-}
-@keyframes more {
-  from {
-    transform: scale(1, 1);
-  }
-  to {
-    transform: scale(1.5, 1.5);
-  }
-}
-@keyframes sparks {
-  from {
-    fill: var(--bg-color);
-    opacity: 0;
-  }
-  to {
-    fill: var(--sparks-color);
-    opacity: 1;
-  }
 }
 
 .grayscale-img {
