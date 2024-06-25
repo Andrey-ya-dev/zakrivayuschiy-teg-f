@@ -1,1 +1,28 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+
+  --main-font-weight: 400;
+  --title-font-weight: 700;
+
+  --font-color: #000;
+  --bg-color: #fff;
+  --btn-hover-font-color: #fff;
+
+  --bg-image: repeating-linear-gradient(
+      var(--pattern-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--pattern-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(var(--from-gradient-color), var(--to-gradient-color));
+  --pattern-gradient-color: #d3d3d3;
+  --from-gradient-color: #e7e7e7;
+  --to-gradient-color: #a1a1a1;
+
+  --sparks-color: #ff0000;
+}
