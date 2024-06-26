@@ -46,7 +46,7 @@
 }
 
 .button:hover::before {
-  transition: transform 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   transform: scaleX(1);
 }
 
@@ -212,6 +212,7 @@
   inset-inline-end: 23px;
   mix-blend-mode: hard-light;
 }
+
 @supports (
   (text-stroke: 1px var(--bg-color)) or
     (-webkit-text-stroke: 1px var(--bg-color))
@@ -249,8 +250,8 @@
   border: 2px solid transparent;
   inline-size: 40px;
 }
+
 .card__icon-button:focus-visible {
-  /* outline: 2px solid var(--font-color); */
   border-color: var(--font-color);
   transition: 0.3s ease;
 }
@@ -312,22 +313,22 @@
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s 0.3s 1 alternate ease-in;
 }
-/* footer */
-.footer {
+/* main */
+.main {
   display: grid;
   justify-items: center;
   margin-block-start: 50px;
   margin-block-end: 100px;
 }
 
-.footer__actions {
+.main__actions {
   display: grid;
-  inline-size: clamp(306px, 48%, 336px);
   justify-self: center;
   margin-block-end: 100px;
+  inline-size: clamp(306px, 48%, 336px);
 }
 
-.footer__button {
+.main__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,13 +337,13 @@
   background-color: var(--bg-color);
 }
 
-.footer__button-icon {
+.main__button-icon {
   display: flex;
   inline-size: 21px;
   block-size: 21px;
 }
 
-.footer__button-text:not(:first-child) {
+.main__button-text:not(:first-child) {
   text-transform: none;
 }
 /* dialog */
@@ -357,7 +358,6 @@
   background-color: var(--bg-color);
   transition: opacity 0.3s ease-in-out;
   inline-size: clamp(341px, 91%, 357px);
-  /* max-block-size: 191px; */
 }
 
 .dialog:not([open]) {
@@ -436,17 +436,17 @@
     inset-block-start: 20px;
     inset-inline-end: 10px;
   }
-  .footer__actions {
+  .main__actions {
     display: grid;
     inline-size: clamp(306px, 48%, 335px);
     block-size: 80px;
   }
-  .footer__button-icon {
+  .main__button-icon {
     display: flex;
     inline-size: 28px;
     block-size: 28px;
   }
-  .footer__button {
+  .main__button {
     display: grid;
     justify-items: center;
     gap: 8px;
