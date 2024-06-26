@@ -515,20 +515,22 @@
         </div>
       </article>
     </section>
-  </main>
 
-  <footer class="footer container">
+    <!-- <div class="footer container"></div> -->
     <div class="footer__actions">
       <button class="footer__button button" onclick="window['dialog-id'].showModal()">
-        <span class="footer__button-icon button__text">
-          <svg class="floopy-icon">
-            <use href="./svg/floppy.svg#wrapper-floppy-id" />
-          </svg>
-        </span>
+        <!-- <span class="footer__button-icon button__text"></span> -->
+        <svg class="floopy-icon footer__button-icon button__text">
+          <use href="./svg/floppy.svg#wrapper-floppy-id" />
+        </svg>
+
         <span class="footer__button-text button__text">Сохранить на память</span>
       </button>
     </div>
-  </footer>
+
+  </main>
+
+
 
   <dialog id="dialog-id" class="dialog">
     <form method="dialog" class="dialog__form">
