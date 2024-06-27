@@ -31,8 +31,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--font-color);
-  /* Правило наследуется, нет необходимости его явно указывать */
-  /* transition: 0.3s ease; */
 }
 
 .button::before {
@@ -47,8 +45,6 @@
 }
 
 .button:hover::before {
-  /* Правило наследуется, нет необходимости его явно указывать */
-  /* transition: 0.5s ease-in-out; */
   transform: scaleX(1);
 }
 
@@ -133,8 +129,6 @@
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  /* Правило наследуется, нет необходимости его явно указывать */
-  /* transition: 0.3s; */
 }
 /* animation header arrow start*/
 .theme-menu__item {
@@ -257,7 +251,6 @@
 
 .card__icon-button:focus-visible {
   border-color: var(--font-color);
-  /* ✔ Правила группы transition будет лучше один раз указать для основного селектора, тогда переход будет работать на элементе всегда*/
 }
 
 .card__icon-button .sparks {
@@ -305,7 +298,6 @@
 .like-icon.is-liked .main-body {
   transition-delay: 0.03s;
 }
-/* ✔.like-icon.is-liked .main-body нужна задержка перехода по заданию */
 
 .like-icon.is-liked .contour {
   transition-delay: 0.06s;
