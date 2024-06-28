@@ -296,7 +296,7 @@
 }
 
 .like-icon.is-liked .main-body {
-  transition-delay: 0.03s;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
